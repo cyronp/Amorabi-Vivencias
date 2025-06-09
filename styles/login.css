@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8EBE2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .login-container {
+    width: 90vw;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-amorabi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0 100px 0;
+    width: 100%;
+  }
+
+  .logo-amorabi img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+    height: auto;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    height: 54px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    padding-right: 140px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  input::placeholder{
+    color: white;
+    opacity: 1;
+  }
+
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .password-wrapper input[type="password"] {
+    width: 100%;
+  }
+
+  .password-wrapper button[type="button"] {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .password-wrapper button[type="button"] img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+  }
+
+  button[type="submit"] {
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin: 50px 0 0 0;
+    display: block;
+  }
+  .forgot-psw a {
+    font-size: 1.1em;
+    color: #93277F;
+    text-decoration: none;
+    padding-right: 150px;
+    text-align: left;
+  }
+
+  .create-account {
+    color: #FF00DD;
+    font-size: 1.1rem;
+    margin-top: 50px;
+  }
+
+  .create-account a {
+    color: #FF00DD;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+}
