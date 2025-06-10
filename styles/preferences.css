@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8EBE2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .login-container {
+    width: 90vw;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button[type="submit"] {
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin: 0;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    color: #93277F;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding: 0;
+    margin: 0 0 24px 0;
+    list-style: none;
+  }
+
+  .step-circle {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #970002;
+    border-radius: 50%;
+    border: 5px solid #970002;
+    display: inline-block;
+  }
+
+  .step-circle.empty {
+    background-color: transparent;
+    border: 5px solid #970002;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #93277F;
+  }
+
+  label img {
+    height: 100px;
+    width: 100px;
+    color: black;
+  }
+
+  :checked+label {
+    background-color: #93277F;
+  }
+
+  input[type="checkbox"]:checked ~ h2 {
+    color: #93277F;
+  }
+  :checked+label img {
+    z-index: 99;  
+    filter: invert(1);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .workshop-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    margin: 24px 0 24px 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  .workshop-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+  }
+}

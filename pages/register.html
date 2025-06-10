@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/register.css" />
+  </head>
+  <body>
+    <form method="post">
+      <div class="login-container">
+        <h1>Crie seu cadastro</h1>
+        <ul>
+          <li></li>
+          <li class="empty"></li>
+        </ul>
+        <input type="text" placeholder="Digite seu e-mail" /><br />
+        <input type="text" placeholder="Digite seu nome" /><br />
+        <input type="text" placeholder="Digite seu CPF" /><br />
+        <input type="date" min="01/01/1925" max="10/06/2025"><br/>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Digite sua senha" />
+          <button type="button" tabindex="-1">
+            <img src="../assets/showpswrd.svg" alt="Mostrar senha" />
+          </button>
+        </div>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Confirmar sua senha" />
+          <button type="button" tabindex="-1">
+            <img src="../assets/showpswrd.svg" alt="Mostrar senha" /> 
+          </button>
+          <br />
+        </div>
+        <button type="submit">Continuar</button><br />
+        <span class="create-account"
+          >Já tem Conta? <a href="#">Faça login</a></span
+        ><br />
+      </div>
+    </form>
+  </body>
+</html>
