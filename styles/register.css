@@ -91,6 +91,7 @@
     background-color: black;
     margin: 50px 0 0 0;
     display: block;
+    cursor: pointer;
   }
 
   .forgot-psw a {
