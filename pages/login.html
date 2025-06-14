@@ -7,16 +7,16 @@
     <title>Login</title>
   </head>
   <body>
-    <form method="post">
+    <form method="post" id="loginForm">
       <div class="logo-amorabi">
         <img src="../assets/logo-amorabi.png" width="372" height="80" />
       </div>
       <div class="login-container">
-        <input type="text" placeholder="Digite seu e-mail" /><br />
+        <input type="text" placeholder="Digite seu e-mail" required id="email"/><br />
         <div class="password-wrapper">
-        <input type="password" placeholder="Digite sua senha" />
+        <input type="password" placeholder="Digite sua senha" required id="senha"/>
         <button type="button" tabindex="-1">
-          <img src="../assets/showpswrd.svg" alt="Mostrar senha" />
+          <img src="../assets/showpswrd.svg" alt="Mostrar senha" id="senha"/>
         </button>
         </div>
         <br />
@@ -28,5 +28,6 @@
         ><br />
       </div>
     </form>
+    <script src="../scripts/login.js"></script>
   </body>
 </html>

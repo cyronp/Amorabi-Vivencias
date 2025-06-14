@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="../styles/register.css" />
   </head>
   <body>
-    <form method="post">
+    <form method="post" id="registerForm">
       <div class="login-container">
         <h1>Crie seu cadastro</h1>
         <ul>
           <li></li>
           <li class="empty"></li>
         </ul>
-        <input type="text" placeholder="Digite seu e-mail" /><br />
-        <input type="text" placeholder="Digite seu nome" /><br />
-        <input type="text" placeholder="Digite seu CPF" /><br />
-        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data de Nascimento" min="01/01/1925" max="10/06/2025"><br/>
+        <input type="text" placeholder="Digite seu e-mail" id="email"/><br />
+        <input type="text" placeholder="Digite seu nome" id="nome"/><br />
+        <input type="text" placeholder="Digite seu CPF" id="cpf"/><br />
+        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Data de Nascimento" min="01/01/1925" max="10/06/2025" id="nascimento"><br/>
         <div class="password-wrapper">
-          <input type="password" placeholder="Digite sua senha" />
+          <input type="password" placeholder="Digite sua senha" id="senha"/>
           <button type="button" tabindex="-1">
-            <img src="../assets/showpswrd.svg" alt="Mostrar senha" />
+            <img src="../assets/showpswrd.svg" alt="Mostrar senha"/>
           </button>
         </div>
         <div class="password-wrapper">
-          <input type="password" placeholder="Confirmar sua senha" />
+          <input type="password" placeholder="Confirmar sua senha" id="confirmarSenha"/>
           <button type="button" tabindex="-1">
             <img src="../assets/showpswrd.svg" alt="Mostrar senha" /> 
           </button>
@@ -37,5 +37,6 @@
         ><br />
       </div>
     </form>
+    <script src="../scripts/register.js"></script>
   </body>
 </html>
