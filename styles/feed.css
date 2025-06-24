@@ -25,6 +25,7 @@
   }
 
   .nav {
+    width: 100%;
     height: 68px;
     display: flex;
     justify-content: space-around;
@@ -45,13 +46,12 @@
     height: 64px;
     display: grid;
     align-content: center;
-    transition: .4s;
   }
 
   .nav-list,
   .nav-link {
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
 
   .nav-link {
@@ -62,7 +62,7 @@
   }
 
   .nav-list {
-    padding-left: 20px;
+    padding: 10px;
     justify-content: flex-start;
   }
 
@@ -85,7 +85,7 @@
     background-color: #93277F;
     width: 70px;
     height: 70px;
-    border-radius: 50%;
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +94,7 @@
   }
 
   .nav-item {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,5 +102,149 @@
 
   .out {
     opacity: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+  }
+
+  .hamburger-nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    width: 200px;
+    height: 870px;
+    background: #000;
+    z-index: -1;
+    text-align: center;
+  }
+
+  .hamburger-nav.active {
+    display: block;
+  }
+
+  .hamburger-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .hamburger-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-nav a {
+    display: block;
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+
+  }
+
+  .amorabi-logo {
+    margin-left: 100px;
+  }
+
+  .external-icon {
+    padding-left: 2px;
+  }
+
+  .feed-container {
+    margin-top: 68px;
+    margin-bottom: 120px;
+  }
+
+  .post-format {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+    border-bottom: 1px solid black;
+  }
+
+  .post-header {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  }
+
+  .username {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .user-type {
+    font-size: 12px;
+    color: #93277F;
+    margin: 0;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 365px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .post-description {
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .post-actions {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .post-actions img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
   }
 }

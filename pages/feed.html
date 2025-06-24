@@ -1,57 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feed</title>
-  <link rel="stylesheet" href="../styles/feed.css">
-</head>
-<body>
-  <header class="header">
-    <nav class="nav container">
-      <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">
-              <img src="../assets/Home Page.svg" alt="homepage-icon" class="logo">
-            </a>
-            <span class="nav-name active">Home</span>
-          </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed</title>
+    <link rel="stylesheet" href="../styles/feed.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <img
+                  src="../assets/Home Page.svg"
+                  alt="homepage-icon"
+                  class="logo"
+                />
+              </a>
+              <span class="nav-name active">Home</span>
+            </li>
 
-          <li class="nav-item">
-            <a href="#search" class="nav-link">
-              <img src="../assets/Search.svg" alt="search-icon" class="logo">
-            </a>
-            <span class="nav-name">Pesquisa</span>
-          </li>
+            <li class="nav-item">
+              <a href="#search" class="nav-link">
+                <img
+                  src="../assets/Search.svg"
+                  alt="search-icon"
+                  class="logo"
+                />
+              </a>
+              <span class="nav-name">Pesquisa</span>
+            </li>
 
-          <li class="nav-item">
-            <a href="#workshops" class="nav-link" >
-              <div class="workshop">
-                <img src="../assets/Task.svg" alt="task-icon" class="logo">
-              </div>
-              <img src="../assets/Task.svg" alt="" class="out">
-              <span class="nav-name">Workshops</span>
-            </a>
-          </li>
+            <li class="nav-item">
+              <a href="#workshops" class="nav-link">
+                <div class="workshop">
+                  <img src="../assets/Task.svg" alt="task-icon" class="logo" />
+                </div>
+                <img src="../assets/Task.svg" alt="" class="out" />
+                <span class="nav-name">Workshops</span>
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a href="#chat" class="nav-link">
-              <img src="../assets/Chat.svg" alt="chat-icon" class="logo">
-            </a>
-            <span class="nav-name">Chat</span>
-          </li>
+            <li class="nav-item">
+              <a href="#chat" class="nav-link">
+                <img src="../assets/Chat.svg" alt="chat-icon" class="logo" />
+              </a>
+              <span class="nav-name">Chat</span>
+            </li>
 
-          <li class="nav-item">
-            <a href="#profile" class="nav-link">
-              <img src="../assets/Customer.svg" alt="profile-icon" class="logo">
-            </a>
-            <span class="nav-name">Perfil</span>
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">
+                <img
+                  src="../assets/Customer.svg"
+                  alt="profile-icon"
+                  class="logo"
+                />
+              </a>
+              <span class="nav-name">Perfil</span>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="../assets/amorabi-minilogo.svg"
+          alt="amorabi-icon"
+          class="amorabi-logo"
+          draggable="false"
+        />
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+      <nav class="hamburger-nav" id="hamburger-nav">
+        <ul>
+          <li><a href="#">Minhas Inscrições</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Configuração</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li>
+            <a href="#"
+              >Instagram<img
+                src="../assets/External Link.svg"
+                class="external-icon"
+            /></a>
           </li>
         </ul>
+      </nav>
+    </header>
+    <div class="feed-container">
+      <div class="post-format">
+        <div class="post-header">
+          <img class="user-image" src="../assets/default-user.png" />
+          <div class="user-info">
+            <h1 class="username">Ivan Almeida</h1>
+            <h3 class="user-type">Educador</h3>
+          </div>
+          <p class="post-description">
+            Inscrições abertas para as aulas no Curso Canto Coral para jovens,
+            adultos e idosos🎶🎶
+          </p>
+          <img
+            class="post-image"
+            src="../assets/post-1.png"
+          />
+        </div>
+        <div class="post-actions">
+          <div class="action">
+            <img src="../assets/comment 1.svg" alt="Comentários" />
+            <span>10</span>
+          </div>
+          <div class="action">
+            <img src="../assets/repost 1.svg" alt="Reposts" />
+            <span>30</span>
+          </div>
+          <div class="action">
+            <img src="../assets/Favorite.svg" alt="Curtidas" />
+            <span>50</span>
+          </div>
+          <img src="../assets/share 1.svg" alt="Compartilhar" />
+        </div>
       </div>
-      <img src="../assets/image-removebg-preview(1)(1) 2.svg" alt="amorabi-icon" class="amorabi-logo">
-    </nav>
-  </header>
-</body>
+      <div class="post-format">
+        <div class="post-header">
+          <img class="user-image" src="../assets/amorabi.png" />
+          <div class="user-info">
+            <h1 class="username">Amorabi</h1>
+            <h3 class="user-type">Organização</h3>
+          </div>
+          <p class="post-description">
+            Hoje é um dia especial, dia de celebrar os 44 anos de vida
+            comunitária da nossa Associação!!!🎉
+          </p>
+          <img
+            class="post-image"
+            src="../assets/post-2.jpeg"
+          />
+        </div>
+        <div class="post-actions">
+          <div class="action">
+            <img src="../assets/comment 1.svg" alt="Comentários" />
+            <span>15</span>
+          </div>
+          <div class="action">
+            <img src="../assets/repost 1.svg" alt="Reposts" />
+            <span>100</span>
+          </div>
+          <div class="action">
+            <img src="../assets/Favorite.svg" alt="Curtidas" />
+            <span>500</span>
+          </div>
+          <img src="../assets/share 1.svg" alt="Compartilhar" />
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/feed.js"></script>
+  </body>
 </html>
