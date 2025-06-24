@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: "Kanit", sans-serif;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+  }
+
+  .nav {
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 64px;
+    display: grid;
+    align-content: center;
+    transition: .4s;
+  }
+
+  .nav-list,
+  .nav-link {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1px;
+    color: white;
+  }
+
+  .nav-list {
+    padding-left: 20px;
+    justify-content: flex-start;
+  }
+
+  .nav-name {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .active {
+    color: #93277F;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .workshop {
+    background-color: #93277F;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .out {
+    opacity: 0;
+  }
+}
